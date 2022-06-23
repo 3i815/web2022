@@ -33,12 +33,13 @@ img {
     height: 100%;
 }
 
-
-/* ナヴィゲーションボタン */
-.navbtn{
+/* ナビゲーションボタン */
+.navbtn {
     padding: 0;
     outline: none;
     border: none;
+    background: transparent;
+    cursor: pointer;
     color: #aaaaaa;
     font-size: 30px;    
 }
@@ -51,7 +52,7 @@ img {
     background-size: cover;
 }
 
-.header-container{
+.hero-container {
     display: grid;
     justify-items: center;
     align-content: center;

@@ -174,8 +174,43 @@ img {
     background-color: #f3f1ed;
 }
 
+.posts-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 25px;
+}
+
+@media(min-width: 768px){
+    .posts-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* 記事一覧の記事 */
+.posts a{
+    display: block;
+}
+
+.post h3 {
+  margin:  1em 0 0.5em;
+  font-size: clanp(12px, 2vw, 20px);
+  min-height: 0vw;
+}
+
+.post p {
+    max-width: 20em;
+    font-size: clamp(10px, 1.6vw, 14px);
+}
+
+.posts img
+   aspect-ratio: 3 / 2
+   object-fit: ;
+   
+
 /* パーツの見出し */
 .heding{
+    position: absolute;
+    top: calc((var(--v-space) + 0.6em) * -1);
     font-family: "Montserrat" , sans-serif;
     font-size: clamp(40px, 5.2px, 70px);
     min-height: 0vw;

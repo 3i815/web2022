@@ -39,6 +39,7 @@ img {
 .w-container {
     width: min(92%, 1166px);
     margin: auto;
+    position: relative;
 }
 
 /* ヘッダー */
@@ -147,7 +148,7 @@ img {
 
 /* タイトルとサブタイトル */
 .heding-decoration{
-    font-size: clanp(30px,3vw,40px);
+    font-size: clamp(30px,3vw,40px);
     min-height: 0vw;
     font-weight: 400;
 }
@@ -193,22 +194,24 @@ img {
 
 .post h3 {
   margin:  1em 0 0.5em;
-  font-size: clanp(12px, 2vw, 20px);
+  font-size: clamp(12px, 2vw, 20px);
   min-height: 0vw;
 }
 
 .post p {
     max-width: 20em;
     font-size: clamp(10px, 1.6vw, 14px);
+    min-height: 0vw;
 }
 
-.posts img
-   aspect-ratio: 3 / 2
-   object-fit: ;
+.posts img {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    width: 100%;
+}
    
-
 /* パーツの見出し */
-.heding{
+.heading{
     position: absolute;
     top: calc((var(--v-space) + 0.6em) * -1);
     font-family: "Montserrat" , sans-serif;
@@ -217,7 +220,7 @@ img {
     font-weight: 300;
 }
 
-.heding span{
+.heading span{
     display: block;
     color: #666666;
     font-size: 18px;
